@@ -1,0 +1,120 @@
+div#carousel {
+    overflow: hidden;
+    width: 670px;
+    margin: 0;
+    padding: 0;
+}
+
+div#carousel div#carouselContents {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+div#carousel div {
+    height: 250px;
+    margin: 0;
+    padding: 4px 40px;
+    background-color: #363636;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+div#carousel img {
+    margin: 0;
+    padding: 0;
+    float: left;
+    padding-right: 16px;
+}
+
+div#carousel h1 {
+    color: #FF7F00;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: lighter;
+    font-size: 32px;
+    /*font: normal small-caps 32px fantasy;*/
+    padding: 0;
+    margin: 6px 0;
+}
+
+div#carousel p {
+    color: white;
+}
+
+ul#carouselContentsList {
+    margin: 0;
+    padding: 0;
+    background: url("img/timelineBackground.png") bottom left repeat-x;
+}
+
+ul#carouselContentsList li {
+    width: 60px;
+    height: 35px;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0 0 0;
+    background: none;
+}
+
+ul#carouselContentsList li.active a {
+    font-weight: bold;
+    font-size: 18px;
+    color: #FF7F00;
+}
+
+ul#carouselContentsList a {
+    color: #363636;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+span#carouselScrollerBack {
+    height: 100%;
+    cursor: url('cur/left.cur'), default;
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); /* IE10+ */
+    background: linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#00ffffff', GradientType = 1); /* IE6-8 */
+}
+
+span#carouselScrollerForward {
+    height: 100%;
+    cursor: url('cur/right.cur'), default;
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 2%, rgba(255, 255, 255, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(2%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 2%, rgba(255, 255, 255, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 2%, rgba(255, 255, 255, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 2%, rgba(255, 255, 255, 1) 100%); /* IE10+ */
+    background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 2%, rgba(255, 255, 255, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00ffffff', endColorstr = '#ffffff', GradientType = 1); /* IE6-8 */
+}
+
+span#carouselPrev {
+    position: absolute;
+    top: 99px;
+    left: 0;
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+    background: url("img/buttonPrevActive.png");
+    margin: 5px;
+}
+
+span#carouselNext {
+    position: absolute;
+    top: 99px;
+    right: 0;
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+    background: url("img/buttonNextActive.png");
+    margin: 5px;
+}
